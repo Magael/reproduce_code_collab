@@ -84,21 +84,20 @@ padding: 12px;
 
 .container{
     display: flex;
-    flex-flow: row nowrap;
+    /*flex-flow: row nowrap;*/
     /*align-items: center;*/
     background-color: rgb(64,70,85);
-    height: 500px;
-    padding: 15px 10px;
+    height: 400px;
+    padding: 10px;
     border: 1px solid black
    }
   
   .container section{
     display:flex;
-    flex-flow: column wrap;
-    align-items: baseline;
-    flex-basis: calc(100/4);
-    flex-grow: 1;
-    overflow: hidden;
+    flex-direction: column;
+    /*flex-flow: column wrap;*/
+    text-align: center;
+    align-self: baseline;
     border: 1px black;
     border-style: hidden solid hidden solid;
     border-collapse: collapse;
@@ -133,4 +132,52 @@ padding: 12px;
     font-size: 16px;
     color:lightslategray;
   }
-  
+
+  .projects{
+      display: flex;
+      background-color: lightgrey;
+      background: url(bg.svg) no-repeat bottom;
+      }
+
+  .projects section{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: baseline;
+
+    }
+
+  .projects img{
+    width:70%;
+    height:70%;
+    object-fit: contain;
+    padding-top: 50px;
+    }
+
+    .projects div{
+        width: 50%;
+        margin-left: 25%;
+        padding: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        font-family:'roboto',sans-serif;
+        font-size: 25px;
+    }
+
+    .projects button {
+        background-color: rgb(130, 177, 248);
+        color: white;
+        text-align: center;
+        width: fit-content;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 8px;
+        margin-left: 45%;
+        }
+    
+    .projects p {
+        font-size: smaller;
+        margin-left: 5%;
+    }
